@@ -1,0 +1,32 @@
+{
+    "version": "3.5.0",
+    "description": "Free, open-source high bit-depth image sequence player built for professional film, VFX & animation workflows.",
+    "homepage": "https://grizzlypeak3d.github.io/DJV",
+    "license": "BSD-3-Clause",
+    "architecture": {
+        "64bit": {
+            "url": "https://github.com/grizzlypeak3d/DJV/releases/download/3.5.0/djv-3.5.0-windows-amd64.zip",
+            "hash": "772f7e1a1487e1dbf82dc8526ac73bbb0b91348c192f5f70a24ca3f0e7fda9ff"
+        }
+    },
+    "extract_dir": "djv-3.5.0-windows-amd64",
+    "bin": "bin\\djv.exe",
+    "shortcuts": [
+        [
+            "bin\\djv.exe",
+            "DJV"
+        ]
+    ],
+    "notes": "DJV stores its settings and log by default in %USERPROFILE%\\Documents\\DJV\\djv.<major>.json and .log (not portable). Override with 'djv.exe -settingsFile <path> -logFile <path>' if you want them elsewhere.",
+    "checkver": {
+        "github": "https://github.com/grizzlypeak3d/DJV"
+    },
+    "autoupdate": {
+        "architecture": {
+            "64bit": {
+                "url": "https://github.com/grizzlypeak3d/DJV/releases/download/$version/djv-$version-windows-amd64.zip"
+            }
+        },
+        "extract_dir": "djv-$version-windows-amd64"
+    }
+}
