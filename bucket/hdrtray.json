@@ -9,10 +9,7 @@
             "hash": "62de6da11bef91e2ca25e9eb6e818d25336970bbf1d864680dc58d7f656fc617"
         }
     },
-    "bin": [
-        "HDRCmd.exe",
-        "HDRTray.exe"
-    ],
+    "bin": "HDRCmd.exe",
     "shortcuts": [
         [
             "HDRTray.exe",
